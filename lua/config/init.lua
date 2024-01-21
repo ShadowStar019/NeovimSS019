@@ -1,0 +1,6 @@
+require("config.options")
+require("config.colorscheme")
+require("config.telescope")
+require("config.treesitter")
+require("config.undotree")
+require("config.lspZero")
