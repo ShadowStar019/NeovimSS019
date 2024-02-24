@@ -12,6 +12,7 @@ lspconfig.rust_analyzer.setup({})
 lspconfig.html.setup({})
 lspconfig.cssls.setup({})
 lspconfig.tsserver.setup({})
+lspconfig.pyright.setup({})
 
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
