@@ -8,11 +8,21 @@ end)
 
 local lspconfig = require("lspconfig")
 lspconfig.lua_ls.setup({})
-lspconfig.rust_analyzer.setup({})
+-- lspconfig.rust_analyzer.setup({})
 lspconfig.html.setup({})
 lspconfig.cssls.setup({})
 lspconfig.tsserver.setup({})
 lspconfig.pyright.setup({})
+lspconfig.ccls.setup({
+    init_options = {
+        index = {
+            threads = 0;
+        };
+        clang = {
+            excludeArgs = { "-frounding-math"} ;
+        };
+    }
+})
 
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()

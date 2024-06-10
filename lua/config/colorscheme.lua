@@ -1,1 +1,2 @@
-vim.cmd.colorscheme "catppuccin-frappe"
+-- Lua initialization file
+vim.cmd [[colorscheme moonfly]]
