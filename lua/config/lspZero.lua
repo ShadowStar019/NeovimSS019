@@ -23,6 +23,9 @@ lspconfig.ccls.setup({
         };
     }
 })
+lspconfig.hls.setup({
+  filetypes = { 'haskell', 'lhaskell', 'cabal' },
+})
 
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
